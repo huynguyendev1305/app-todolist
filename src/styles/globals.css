@@ -1,0 +1,35 @@
+body.dark-mode {
+  --body-background: #26242e;
+  --text-color: white;
+  --text-color-inverse: black;
+  --link-color: #a3dafb;
+}
+body.light-mode {
+  --body-background: white;
+  --text-color: rgba(black, 0.85);
+  --text-color-inverse: whitesmoke;
+  --link-color: coral;
+}
+
+body {
+  background-color: var(--body-background);
+  color: var(--text-color);
+  font-family: "le-monde-livre-classic-byol", serif;
+  transition: all 0.2s linear;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.AppHeader {
+  margin-bottom: 1rem;
+}
+.AppMain {
+  flex: 1;
+  overflow-x: hidden;
+}
+.AppFooter {
+  margin-top: 1rem;
+}
